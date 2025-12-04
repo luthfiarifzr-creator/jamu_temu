@@ -11,140 +11,222 @@
 https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
 " rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+<style>
+  html{
+    scroll-behavior: smooth;
+  }
+</style>
   </head>
   <body>
     <section>
       <header
       data-aos="fade-down"
-      data-aos-duration="2000"
-      class="p-6 bg-white rounded-lg shadow-sm border border-gray-200 h-20 flex items-center"
+      data-aos-duration="1000"
+      class="p-6 bg-white w-full rounded-b-lg shadow-sm border border-black h-20 flex items-center fixed z-50"
     >
      
-        <img src="bg.png" alt="" class="h-20 w-auto" />
-        <h3 class="font-sans text-xl font-bold flex-row">PT. JAMU TEMU</h3>
+        <a href="#beranda"><img src="bg.png" alt="" class="h-20 w-auto" /></a>
+       <h3 class="font-sans text-xl font-bold flex-row">PT. JAMU TEMU</h3>
     
 
    
         <ul
           class="font-sans ml-120 text-xl font-semibold flex flex-row "
         >
-          <a href="https://tresnojamuindonesia.com/"><li class="ml-10">Tentang</a></li></a>
-          <a href="https://i.pinimg.com/736x/62/3d/56/623d5672bdd403da40177b5a793617dd.jpg"><li class="ml-10">TPM</a></li></a>
+          <a href="#beranda"><li class="ml-10">Beranda</a></li></a>
+          <a href="#tujuan"><li class="ml-10">Tentang</a></li></a>
+         <a href="#produk"><li class="ml-10">Produk</a></li></a> 
+         <a href="#usaha"><li class="ml-10">Karir</a></li></a> 
           <li><a href=""></a><el-dropdown class="inline-block">
-  <button class="ml-8  inline-flex w-full justify-center text-xl rounded-md bg-white/10 px-3  font-semibold text-black inset-ring-1 inset-ring-white/5 hover:bg-white/20">
-    Media
-    <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class=" mt-1  ml-2 size-5 text-gray-400">
+  <button class="ml-2  inline-flex w-full justify-center text-xl rounded-md bg-white/10 px-3  font-semibold text-black inset-ring-1 inset-ring-white/5 hover:bg-white/20">
+     <svg viewBox="0 0 20 20" fill="currentColor" data-slot="icon" aria-hidden="true" class=" mt-1  mr-1 size-5 text-gray-400">
       <path d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" fill-rule="evenodd" />
     </svg>
+    Lokasi
+   
   </button>
   <el-menu anchor="bottom end" popover class="w-56 origin-top-right rounded-md bg-gray-800 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
     <div class="py-1">
-      <a href="https://i.pinimg.com/736x/fd/78/3c/fd783c84b84e47f05966eb7796bc5fdf.jpg" class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Artikel</a>
-      <a href="https://i.pinimg.com/1200x/c2/e3/02/c2e3021f14412c829f30807f4bc29e72.jpg" class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Berita</a>
-      <a href="https://i.pinimg.com/1200x/12/69/41/126941d7a39a8ab09160aa7e4a80cf2b.jpg" class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Kegiatan</a>
+      <a href="#Lokasi" class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Pusat</a>
+      <a href="https://www.google.com/maps/@-8.0674854,112.2311583,3a,75y,155.2h,96.71t/data=!3m7!1e1!3m5!1sK4I2vRW7Ta6OYaC3jBNrEQ!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26
+      w%3D900%26h%3D600%26pitch%3D-6.709999999999994%26panoid%3DK4I2vRW7Ta6OYaC3jBNrEQ%26yaw%3D155.2!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" 
+      class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Cabang 1</a>
+      <a href="https://www.google.com/maps/place/Mushola+As-Salam/@-8.0834884,112.3229034,3a,75y,323.98h,89.04t/data=!3m7!1e1!3m5!1sIwSxx2yzM8gFNmLs4FOgVA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0.9635622735142277%26panoid%3DIwSxx2yzM8gFNmLs4FOgVA%26yaw%3D323.9787539634029!7i16384!8i8192!4m14!1m7!3m6!1s0x2e7893e784227469:0x49713933837b5978!2sTaman+Idaman+Hati+Wlingi+Blitar!8m2!3d-8.081383!4d112.324369!16s%2Fg%2F11b_2jzmwf!3m5!1s0x2e7893f58158ba65:0x11f333046a28dec7!8m2!3d-8.0832247!4d112.3226386!16s%2Fg%2F11h4tc8lw5?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D"
+       class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Cabang 2</a>
        </div> </el-menu></el-dropdown></li>
-          
-         <a href="https://i.pinimg.com/736x/b6/01/3b/b6013b235fc485212401f0768ba755ba.jpg"><li class="ml-10">Produk</a></li></a> 
-          <li class="ml-10">Karir</a></li>
         </ul>
         
 
     
       </header>
        </section>
-       <section>
+       <section id="beranda" class="h-200">
         <div data-aos="fade-left"
      data-aos-anchor="#example-anchor"
      data-aos-offset="500"
-     data-aos-duration="2000" >
-        <img src="Desa.jfif" alt="" class="h-150 w-500 relative"> 
-        <h1  data-aos="flip-left"
+     data-aos-duration="2000" ><div>
+       <img src="view.jfif" alt="" class="lg:mt-0  lg:h-170 lg:w-full relative opacity-50"> 
+         <div class="absolute inset-0 bg-green-950/30"></div>
+      </div>
+       
+        <div class="flex-row lg:flex-col mr-50 lg:mr-0 "><h1 data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
-     data-aos-duration="3000" class="absolute top-50 ml-30 text-3xl text-white font-bold">WARISAN LELUHUR DALAM
+     data-aos-duration="3000" class=" mr-10 lg:mr-0 text-xl lg:text-4xl text-black lg:text-white absolute top-60 ml-30 font-bold">WARISAN LELUHUR DALAM
            SETIAP TETES JAMU</h1>
         <p data-aos="flip-left"
      data-aos-easing="ease-out-cubic"
-     data-aos-duration="3000" class="absolute top-70 ml-30 text-2xl text-white font-bold">Setiap tetes jamu dari PT. JAMU TEMU adalah perwujudan warisan leluhur yang kaya akan tradisi dan manfaat alami. Diracik dengan bahan-bahan berkualitas dan cinta, kami menjaga kearifan lokal untuk kesehatan dan keseimbangan hidup Anda.</p>
+     data-aos-duration="3000" class="text-black lg:text-white text-sm lg:text-2xl absolute top-90 ml-30 font-bold">Setiap tetes jamu dari PT. JAMU TEMU adalah perwujudan warisan leluhur yang kaya akan 
+     tradisi dan manfaat alami. Diracik dengan bahan-bahan
+      berkualitas dan cinta, kami menjaga kearifan lokal untuk kesehatan dan keseimbangan hidup Anda.</p>
+    </div>
        </div>
         </section>
-       <section class="flex h-180 ">
-        <div data-aos="fade-right" data-aos-duration="1500" class="flex justify-center items-center    mb-60 mt-40 ml-30  w-500">
-      <img src="pemandangan.jfif" alt="" class="h-110 w-100 flex-row"/>
-      </div>
-      <div data-aos="fade-left"
-     data-aos-anchor="#example-anchor"
-     data-aos-offset="500"
-     data-aos-duration="1000" class="ml-10 mt-70"> <h1 class="flex-col text-3xl mb-10 font-semibold">Tujuan Kami</h1>
-        
-     PT. Jamu Temu adalah perusahaan yang berkomitmen untuk menyediakan produk-produk jamu berkualitas tinggi yang diracik dari bahan-bahan alami pilihan
-     . Di situs ini, Anda dapat menemukan berbagai tentang produk-produk kami, sejarah perusahaan, serta tips kesehatan dan kecantikan dari informasi jamu tradisional Indonesia.
-      ami berharap Anda menikmati kunjungan Anda dan menemukan apa yang Anda cari. Terima kasih telah mengunjungi website kami.
+       <section id="tujuan" class="flex h-180 ">
+        <div class="w-full flex flex-col px-20 py-10">
+    <div class="flex items-center justify-between">
+        <div data-aos="fade-right" data-aos-duration="1500" class="w-1/2 ml-15">
+            <h2 class="text-[25px] font-semibold mb-2">Visi Kami</h2>
+            <p class="text-[20px] leading-relaxed">
+                PT. JAMU TEMU tercipta dari sebuah harapan yang tumbuh oleh semangat.
+                Dengan dorongan dari orang tercinta yang tak henti memberikan support,
+                serta dukungan pemerintah yang memberi izin untuk membangun perusahaan kami.
+            </p>
+        </div>
+        <img data-aos="flip-up" data-aos-duration="1500" src="pembuatan jamu.jpg"
+             class="object-cover rounded-xl h-80 w-80 mr-25" />
     </div>
-     </section>
-        
- 
-   
- 
- <section id="image-carousel" class="splide bg-green-600 h-200" aria-label="Beautiful Images">
-  <div class="splide__track p-30 ml-30">
-     <p class="ml-115 mb-30 font-serif text-3xl bg-lime-300 w-50 h-20 rounded-md">Produk Kami</p>
+    <div class="flex items-center justify-between ">
+        <img data-aos="flip-up" data-aos-duration="1500" src="gambar jamu.jpg"
+             class="object-cover rounded-xl h-80 w-80 ml-30"/>
+        <div data-aos="fade-left" data-aos-duration="1500" class="w-1/2 ml-15">
+            <h2 class="text-xl font-semibold mb-2 text-[25px]">Misi Kami</h2>
+            <p class="text-sm leading-relaxed text-[20px]">
+              PT. JAMU TEMU Indonesia adalah perusahaan yang berkomitmen untuk menyediakan produk-produk jamu berkualitas tinggi yang diracik dari bahan-bahan alami pilihan. Di situs ini, Anda dapat menemukan berbagai tentang produk-produk kami,
+               sejarah perusahaan, 
+              serta tips kesehatan dan kecantikan dari informasi jamu tradisional Indonesia. Kami berharap Anda menikmati kunjungan Anda dan menemukan apa yang Anda cari. Terima kasih telah mengunjungi website kami.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+     </section> 
+ <section id="produk" class="splide bg-green-600 h-200 rounded-lg" aria-label="Beautiful Images">
+  <div class="splide__track p-30 ml-30 mt-20">
+     <p class="ml-115 mb-20 font-serif text-3xl bg-lime-300 w-50 h-10 rounded-md text-center">Produk Kami</p>
 		<ul class="splide__list">
 			<li class="splide__slide">
-				<img class="h-100 w-auto" src="beras kencur.jfif" alt="">
+				<img class="h-100 w-auto rounded-lg" src="beras kencur.jfif" alt="">
         <p class="ml-20 font-mono font-bold">Beras Kencur</p>
 			</li>
 			<li class="splide__slide">
-				<img class="h-100 w-auto" src="kunyit asam.jfif" alt="">
+				<img class="h-100 w-auto rounded-lg" src="kunyit asam.jfif" alt="">
         <p class="ml-20 font-mono font-bold">Kunyit Asam</p>
 			</li>
 			<li class="splide__slide">
-				<img class="h-100 w-auto" src="Jamu Jamu drink.jfif" alt="">
+				<img class="h-100 w-auto rounded-lg" src="Jamu Jamu drink.jfif" alt="">
         <p class="ml-20 font-mono font-bold">Temulawak</p>
 			</li>
       <li class="splide__slide">
-				<img class="h-100 w-auto" src="sereh.jfif" alt="">
+				<img class="h-100 w-auto rounded-lg" src="sereh.jfif" alt="">
         <p class="ml-25 font-mono font-bold">Sereh</p>
+			</li>
+       <li class="splide__slide">
+				<img class="h-100 w-auto rounded-lg" src="rosella.jfif" alt="">
+        <p class="ml-25 font-mono font-bold">Rosella</p>
+			</li>
+      <li class="splide__slide">
+				<img class="h-100 w-auto rounded-lg" src="lemon madu.jfif" alt="">
+        <p class="ml-20 font-mono font-bold">Lemon Madu </p>
 			</li>
 		</ul>
   </div>
 </section>
-<section class="flex gap-20 mb-10"> 
+<section id="usaha" class="flex gap-20 mb-10"> 
   <div data-aos="zoom-in-left" data-aos-duration="1500" class="flex-row mt-50 ml-10 text-xl">
-    <p class="text-3xl mb-10 font-semibold ">Usaha Kami
+    <p class="text-3xl mb-10 font-semibold mt-0">Usaha Kami
 </p>
 <p class="mb-20">Kami berkomitmen menghadirkan produk-produk inovatif 
-  yang tidak hanya memenuhi kebutuhan masyarakat tetapi juga menjunjung standar keamanan dan mutu tertinggi. Dengan dukungan fasilitas produksi can
-  ggih dan pengawasan ketat sesuai standar CPOTB (Cara Pembuatan Obat Tradisional yang Baik), kami memastikan setiap produk memiliki kualitas unggul. Dalam s
-  etiap langkah produksi, kami mengutamakan bahan alami terbaik yang dipilih secara berkelanjutan dari sumber terpercaya, menciptakan produk yang aman, efektif,
+  yang tidak hanya memenuhi kebutuhan masyarakat tetapi juga menjunjung standar keamanan dan mutu tertinggi. Dengan dukungan fasilitas produksi canggih dan pengawasan ketat sesuai standar CPOTB (Cara Pembuatan Obat Tradisional yang Baik), kami memastikan setiap produk memiliki kualitas unggul. Dalam setiap langkah produksi, kami mengutamakan bahan alami terbaik yang dipilih secara berkelanjutan dari sumber terpercaya, menciptakan produk yang aman, efektif,
    dan berdaya guna.
 
-PT Tresno Jamu Indonesia terus berkembang sebagai pelopor dalam menciptakan solusi herbal modern untuk mendukung kesehatan masyarakat secara holistik.</p>
+PT JAMU TEMU Indonesia terus berkembang sebagai pelopor dalam menciptakan solusi herbal modern untuk mendukung kesehatan masyarakat secara holistik.</p>
   </div>
    <div  data-aos="flip-right" data-aos-duration="1500">
-    <img src="refrensi.jpg" alt="" class= "mr-120 mb-30 mt-30 h-100 w-100 flex-row">
+    <img src="refrensi.jpg" alt="" class= "mr-120 mb-30 mt-30 h-100 w-100 flex-row rounded-2xl">
   </div>
 </section>
-<section class="w-full flex-col mb-40">
-  <div data-aos="zoom-in-up" data-aos-duration="1600"> <h2 class="text-3xl font-semibold mb-10 ml-150 ">Lokasi Kami</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d490.281571828243!2d112.61817939388519!3d-7.928945262380639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
-    1!2m1!1sPermata%20Jingga%20Blok%20Pinang%20No.5!5e1!3m2!1sid!2sid!4v1763695296201!5m2!1sid!2sid"
-     class="ml-50" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-   
+<section class="mb-50">
+  <p class="ml-150 mb-15 text-3xl">Berita Terkini</p>
+  <div class="flex">
+  <div class="hover:shadow-2xl sha">
+    <div class="ml-30 w-80 h-120 rounded-xl overflow-hidden shadow-lg bg-white/90 backdrop-blur-md">
+  <img src="top brand.png" class="w-full h-48 object-cover">
+  <div class="p-5">
+   <p class="mb-40">
+    PT JAMU TEMU resmi mendapatkan sertifikat brand terbaik tahun ini.
+   </p> 
+   <a href="https://www.topbrand-award.com/article/detail/raih-top-brand-2025-etawalin-tertantang-untuk-konsisten-berinovasi" class="text-green-700 font-semibold ">
+    Baca Selengkapnya
+  </a>
+  </div>
+</div>
+      
+     </div>
+      <div class="hover:shadow-2xl shadow-green-200">
+    <div class="ml-20 w-80 h-120 rounded-xl overflow-hidden shadow-lg bg-white/90 backdrop-blur-md">
+  <img src="pbb.jpeg" class="w-full h-48 object-cover">
+  <div class="p-5">
+   <p class="mb-30">
+    PT JAMU TEMU berkolaborasi dengan puluhan pengusaha internasional untuk membangun cabang ke-3 di area Masjidil Haram.
+   </p> 
+   <a href="https://i.pinimg.com/736x/22/d9/56/22d956ada00508a91eb19d1f58481d2b.jpg" class="text-green-700 font-semibold ">
+    Baca Selengkapnya
+  </a>
+  </div>
+</div>
+      
+     </div>
+      <div class="hover:shadow-2xl shadow-green-200">
+    <div class="ml-20 w-80 h-120 rounded-xl overflow-hidden shadow-lg bg-white/90 backdrop-blur-md">
+  <img src="barcelona.jfif" class="w-full h-48 object-cover">
+  <div class="p-5">
+   <p class="mb-30">
+    PT JAMU TEMU memberikan dukungan dan dana terhadap tim Barcelona di Spanyol agar menang melawan Real Madrid di piala dunia.
+   </p> 
+  <a href="https://i.pinimg.com/736x/22/d9/56/22d956ada00508a91eb19d1f58481d2b.jpg" class=" text-green-700 font-semibold">
+    Baca Selengkapnya
+  </a>
+  </div>
+</div>
+      
+     </div>
+  </div>
 </section>
-<section class="bg-black h-60">
-  <div class="ml-10 mt-50 flex-col">
-    <div class="text-white bg-green-600 w-15">Kontak</div>
-    <p class="text-white ">Perumahan Permata Jingga Blok Pinang No.5, Tunggulwulung, Kec. Lowokwaru,
+<section class="w-full flex-col mb-40" id="Lokasi">
+  <div data-aos="zoom-in-up" data-aos-duration="1600"> <h2 class="text-3xl font-semibold mb-10 ml-150 ">Lokasi Kami</h2>
+    <iframe class="ml-50" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d873.4330098251189!2d112.61708480822203!3d-7.92914418132845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6299cca363cf3%3A0xadbb7d92dc3970a3!2sAverroes%20Digital%20Islamic%20School%20(ADIS)!5e1!3m2!1sid!2sid!4v1764633500307!5m2!1sid!2sid" 
+    width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<section class="bg-gray-950 mt-30 h-50">
+  <div class="ml-10 mt-20">
+   <a href="https://api.whatsapp.com/send?phone=628606293991&text&app=%20%20%20%20%20%20%20%20instagram&utm_campaign=wa_phone_number_xma&source_surface=30">
+    <button class="font-semibold w-25 h-7 rounded-[10px] mt-5 mb-6 bg-lime-600 hover:bg-gray-700">
+      <p>
+        Kontak
+      </p>
+    </button>
+   </a> 
+    <p class="text-white">Alamat Kami : Perumahan Permata Jingga Blok Pinang No.5, Tunggulwulung, Kec. Lowokwaru,
        Kota Malang, Jawa Timur 65141</p>
-    <p class="text-white mt-5">💬 luthfiarifzr@gmail.com</p>
-    <p class="text-white"> 📞 08606293991</p>
+    <p class="text-white mt-5 underline">💬 luthfiarifzr@gmail.com</p>
+    <p class="text-white underline"> 📞 08606293991</p>
   </div>
   
 </section>
 
-    
-    
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
